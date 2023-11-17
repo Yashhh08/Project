@@ -1,0 +1,610 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatiable" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         
+        <title> Voyage the Website  </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+         
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+         
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <body data-aos-easing="ease" data-aos-duration="600" data-aos-delay="200">
+            <header class="header">
+                <a href="#" class="logo"> <i class="fas fa-paper-plane"></i> Voyage </a>
+                <form action="" class="search-form">
+                    <input type="search" name="" placeholder="Search here.." id="searchbox">
+                    
+                    <label for="searchbox" class="fas fa-search"></label>
+                </form>
+                <div class="icons">
+                  <div class="fas fa-search" id="search-btn"></div>
+                  <div class="fas fa-moon" id="theme-btn"></div>
+                  <div class="fas fa-user" id="login-btn"></div>
+                  <div class="fas fa-bars" id="menu-btn"></div>
+                </div>
+    
+                <nav class="navbar">
+                    <a href="#home">Home</a>
+                    <a href="#packages">Packages </a>
+                    <a href="#guide">Guides </a>
+                    <a href="#Services">Services</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#review">Revivew</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#blogs">Blogs</a>
+                </nav>
+    
+                <form action="" class="Login-form" id="Login-form">
+                    <div class="inputBox">
+                        <span>Username</span>
+                        <input type="text" placeholder="enter your name ">
+                    </div>
+    
+                    <div class="inputBox">
+                        <span>password</span>
+                        <input type="password" placeholder="enter your password ">
+                    </div>
+    
+                    <div class="remember">
+                        <input type="checkbox" name="" id="login-remenber">
+                        <label for="login-remenber"> Remember me</label>
+                        <br>
+                        <a href="./regist.html">if new register</a>
+    
+                    </div>
+    
+                    <input type="submit" class="btn" value="login">
+                </form>   
+            </header>           
+     <!-- header section end-->
+    
+     <!-- home starts -->
+    <section class="home" id="home">
+        <div class="image"  data-aos="fade-down">
+            <img src="./images/travel guidebg.png" alt=" ">
+        </div>
+        <div class="content"  data-aos="fade-up">
+            <h3> Incredible India Awaits!!</h3>
+            <p> "Unveil India's Treasures with Voyage's Expert Guides .<br>
+                 Voyage's expert guides are your key to unlocking India's hidden treasures. Join us on a journey to explore the rich cultural heritage, natural beauty, and historical landmarks of this incredible country." </p>
+                 
+            <a href="./packages.html" class="btn"> explore now </a>
+    
+        </div>
+    </section>
+    <!--home section ends-->
+    
+    <!--filter form section starts-->
+     <section class="form-container " data-aos="zoom-in">
+        <form action="">
+            <div class="inputBox">
+                <span> Where to </span>
+                <input type="text" placeholder="search places">
+            </div>
+    
+            <div class="inputBox">
+                <span> arrivals </span>
+                <input type="date">
+            </div>
+    
+            <div class="inputBox">
+                <span> leaving </span>
+                <input type="date">
+            </div>
+            <a href="./booknow.html" class="btn">Book now</a>
+    
+        </form>
+     </section>
+    
+    <!--filter form section ends-->
+    
+    <!-- packages section starts-->
+    <section class="packages" id="packages">
+        <h1 class="heading"> our <span>Packages</span> </h1>
+    
+        <div class="box-container">
+            
+            <div class="box " data-aos="fade-up">
+             <div class="image">
+                <img src="./images/kerela.jpg" alt="kerela">
+                <h3> <i class="fas fa-map-marker-alt"></i> Kerela </h3>
+             </div>
+    
+             <div class="content">
+                <p> Kerala, often referred to as "God's Own Country," is a picturesque state in southwestern India known for its lush green landscapes, serene backwaters, and vibrant culture. With its abundant natural beauty and diverse traditions, Kerala offers a unique and tranquil experience for travelers.</p>
+                <a href="./hireguide.html" class="btn"> look for the guide</a>
+             </div>
+    
+            </div>
+    
+            <div class="box " data-aos="fade-up">
+                <div class="image">
+                    <img src="./images/mumbai1.jpg" alt="mumbai">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Mumbai </h3>
+                </div>
+                <div class="content">
+                    <p> Mumbai, is a vibrant metropolis that never rests. From its iconic landmarks like the Gateway of India to the bustling streets and the Bollywood glamour, it's a city that offers a thrilling blend of rich history and contemporary energy, ensuring a non-stop adventure for every traveler.</p>
+                    <a href="./mumguide.html" class="btn"> look for the guide</a>
+                </div>
+        
+            </div>
+    
+            <div class="box " data-aos="fade-up">
+                <div class="image">
+                    <img src="./images/fort.jpg" alt="udaipur">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Udaipur </h3>
+                </div>
+                <div class="content">
+                    <p>Udaipur, the "City of Lakes" in Rajasthan, India, is famous for its stunning palaces, serene lakes, and historic charm. It's a romantic destination with a regal past that captivates visitors with its beauty and regal ambiance.</p>
+                    <a href="./udpguide.html" class="btn"> look for the guide</a>
+                </div>
+        
+            </div>
+    
+       
+         </div>
+         <div class="load-more aos-init" data-aos="fade-up"><a href="./packages.html" class="btn">Load More</a></div>
+    
+    
+    
+    </section>
+    
+    <!-- packages section ends-->
+    
+    <!--Guide sectiom starts-->
+    
+    <section class="guide" id="guide">
+        <h1 class="heading"> our <span>Guides</span> </h1>
+    
+        <div class="box-container">
+            
+            <div class="box " data-aos="fade-up">
+                       
+                <div class="image">
+                   <img src="./images/tourguide3.jpeg" alt="mumbai">
+                   
+                   <h3> Arjun Desai </h3>
+                </div>
+       
+                <div class="content">
+                   <p> 
+                    <b>Location</b>: Based in Mumbai<br>
+                    <b>Specialization </b>: Historical and architectural tours in Mumbai.<br>
+                   </p>
+                   <a href="./mumguide.html" class="btn"> Know more</a>
+                </div>
+       
+             </div>
+    
+             <div class="box " data-aos="fade-up">
+                       
+                <div class="image">
+                   <img src="./images/tourguide5.jpeg" alt="Konkan">
+                   
+                   <h3>Leena Patil</h3>
+                </div>
+       
+                <div class="content">
+                   <p> 
+                    <b>Location</b>: Based in Malvan.<br>
+                    <b>Specialization </b>:Culinary and cultural experiences in the Konkan region.<br>
+        
+                   </p>
+                   <a href="./kokguide.html" class="btn"> Know more</a>
+                </div>
+             </div>   
+    
+             <div class="box " data-aos="fade-up">
+                       
+                <div class="image">
+                   <img src="./images/guide13.jpg" alt="mumbai">
+                   
+                   <h3> Sonam Wangmo</h3>
+                </div>
+       
+                <div class="content">
+                   <p> 
+                    <b>Location</b>:Based in Shey, near Leh<br>
+                    <b>Specialization </b>:  Cultural and monastery tours in Leh-Ladakh.<br>
+                   </p>
+                   <a href="./lehguide.html" class="btn"> Know More</a>
+                </div>
+       
+             </div>
+    
+       
+         </div>
+    
+        </div>
+        <div class="load-more aos-init" data-aos="fade-up"><a href="./guides.html" class="btn">Load More</a></div>
+    
+    </section>
+    
+    
+    <!--Guide sectiom ends-->
+    
+    <!--Services starts-->
+    
+    <section class="Services" id="Services">
+        <h1 class="heading">Our <span>Services</span></h1>
+        <div class="box-container">
+            <div class="box" data-aos="zoom-in">
+                <span>01</span>
+                <i class="fas fa-users"></i>
+                <h3>Expert Guides</h3>
+            </div>
+            <div class="box" data-aos="zoom-in">
+                <span>02</span>
+                <i class="	fas fa-archway"></i>
+                <h3>Historical Tours</h3>
+            </div>
+            
+            <div class="box" data-aos="zoom-in">
+                <span>03</span>
+                <i class="fas fa-utensils"></i>
+                <h3>Local Culinary Experiences</h3>
+            </div>
+            <div class="box " data-aos="zoom-in">
+                <span>04</span>
+                <i class="	fas fa-thumbtack"></i>
+                <h3>All over India</h3>
+            </div>
+            <div class="box " data-aos="zoom-in">
+                <span>05</span>
+                <i class="	fas fa-glass-martini-alt"></i>
+                <h3>Wine and Brewery Tours  </h3>
+            </div>
+            <div class="box " data-aos="zoom-in">
+                <span>06</span>
+                <i class="	fas fa-taxi"></i>
+                <h3>Local Transport Service </h3>
+                
+            </div>
+            <div class="box " data-aos="zoom-in">
+                <span>07</span>
+                <i class="fas fa-camera-retro"></i>
+                <h3>Photography Services </h3>
+            </div>
+            <div class="box " data-aos="zoom-in">
+                <span>08</span>
+                <i class="fas fa-map-marked-alt"></i>
+                <h3> Accessible Tours </h3>
+            </div>
+        
+        </div>
+    </section>
+    
+    
+    <!--Services ends-->
+    
+    <!--pricing section starts-->
+    
+    <section class="pricing" id="pricing">
+        <h1 class="heading">Our <span>Pricing</span></h1>
+        <div class="box-container">
+    
+            <div class="box " data-aos="zoom-in-up">
+                <h3>Basic plan</h3>
+                <div class="price">
+                    <span>₹</span>
+                    <span class="amount">2000</span>
+                    <span>/day</span>
+                </div>
+                <ul>
+                    <li>half day tour(4-5hrs)</li>
+                    <li>safty guide</li>
+                    <li>insurance</li>
+                    <li>Standard Tour</li>
+    
+                </ul>
+                <a href="#" class="btn">choose plan</a>
+    
+            </div>
+            <div class="box " data-aos="zoom-in-up">
+                <h3>Standard plan</h3>
+                <div class="price">
+                    <span>₹</span>
+                    <span class="amount">3500</span>
+                    <span>/day</span>
+                </div>
+                <ul>
+                    <li>full day tour</li>
+                    <li>safty guide</li>
+                    <li>insurance</li>
+                    <li>Standard Tours</li>
+            
+    
+                </ul>
+                <a href="#" class="btn">choose plan</a>
+    
+            </div>
+    
+            <div class="box " data-aos="zoom-in-up">
+                <h3>Premium plan</h3>
+                <div class="price">
+                    <span>₹</span>
+                    <span class="amount">4500</span>
+                    <span>/day</span>
+                </div>
+                <ul>
+                    <li>full day tour</li>
+                    <li>safty guide</li>
+                    <li>insurance</li>
+                    <li>Standard Tours</li>
+                    <li>Transportation Service
+                        <br>
+                        (6 people/car)
+                    </li>
+                    <li>Entrance Fees to Attractions</li>
+    
+                </ul>
+                <a href="#" class="btn">choose plan</a>
+    
+            </div>
+            
+    
+    
+        </div>
+        *Itinerary can be customised*
+    
+    </section>
+    
+    <!-- pricing section ends-->
+    
+    <!--review section starts-->
+    <section class="review aos-init" id="review" data-aos="fade-up">
+        <h1 class="heading"> Client's <span>Revivew</span> </h1>
+    
+        <div class="swiper review-slider swiper-initialized swiper-horizontal swiper-backface-hidden aos-init" data-aos="fade-up">
+            <div class="swiper-wrapper" id="swiper-wrapper-87c95ec95bc585b3" aria-live="off" style="transition-duration: 0ms; transform: translate3d(-3900px, 0px, 0px); transition-delay: 0ms;">
+                
+                
+    
+                
+    
+                
+                
+            <div class="swiper-slide slide aos-init swiper-slide-next" data-aos="fade-up" role="group" aria-label="4 / 5" data-swiper-slide-index="3" style="width: 945px; margin-right: 30px;">
+                    <img src="./images/client3.jpg" alt=" ">
+                    <h3>Muhammad Ali </h3>
+                    <p>Kolkata's vibrant culture and rich history were beautifully showcased by the local guide I booked through this platform. 
+                        Their deep knowledge of the city's art, literature, and traditions added depth to my experience. We explored the Victoria Memorial,
+                         roamed through the colorful markets, and indulged in delectable Bengali sweets. 
+                         This was a journey of discovery, and I left with a profound understanding of Kolkata's charm
+                    </p>
+                    <div class="stars aos-init" data-aos="flip-up">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+    
+                    </div>       
+                </div><div class="swiper-slide slide aos-init" data-aos="fade-up" role="group" aria-label="5 / 5" data-swiper-slide-index="4" style="width: 945px; margin-right: 30px;">
+                    <img src="./images/client5.jpg" alt=" ">
+                    <h3>Sophie Turner</h3>
+                    <p>My visit to Agra was centered around the iconic Taj Mahal, and the local guide I hired did an excellent job of bringing the monument's history and significance to life. 
+                        I was impressed by their insights and attention to detail. However, I wish I had more time to explore other parts of Agra as well.
+                         Nevertheless, the guide made the Taj Mahal visit truly special.
+                    </p>
+                    <div class="stars aos-init" data-aos="flip-up">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        
+    
+                    </div>       
+                </div><div class="swiper-slide slide" role="group" aria-label="1 / 5" data-swiper-slide-index="0" style="width: 945px; margin-right: 30px;">
+                    <img src="./images/client.jpg" alt=" ">
+                    <h3>Emma Johnson</h3>
+                    <p>My trip to Mumbai was made incredibly enriching, 
+                        thanks to the local guide I found on the website. 
+                        From the moment I arrived, the guide shared their deep knowledge of the city's history and culture. 
+                        They took me to iconic landmarks like the Gateway of India and introduced me to hidden gems I would have never found on my own.
+                         Their expertise and warm personality made my visit truly memorable. I can't recommend this service enough!
+                    </p>
+                    <div class="stars aos-init" data-aos="flip-up">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+    
+                    </div>       
+                </div><div class="swiper-slide slide aos-init swiper-slide-prev" data-aos="fade-up" role="group" aria-label="2 / 5" data-swiper-slide-index="1" style="width: 945px; margin-right: 30px;">
+                    <img src="./images/client2.jpg" alt=" ">
+                    <h3>Michael Roberts</h3>
+                    <p>Udaipur's beauty left me in awe, and the local guide I hired through this website made the experience even more enchanting.
+                        Their insights into the city's royal history, the majestic City Palace, and serene boat rides on Lake Pichola were simply outstanding.
+                        The guide's passion for their city was contagious, and I left with a deep love for Udaipur. 
+                        This service is a gem for any traveler.
+                    </p>
+                    <div class="stars aos-init" data-aos="flip-up">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+    
+                    </div>       
+                </div><div class="swiper-slide slide aos-init swiper-slide-active" data-aos="fade-up" role="group" aria-label="3 / 5" data-swiper-slide-index="2" style="width: 945px; margin-right: 30px;">
+                    <img src="./images/client4.jpg" alt=" ">
+                    <h3>Priya Sharma</h3>
+                    <p>Visiting Varanasi was a dream come true, and I was fortunate to have a local guide who offered an eye-opening experience.
+                         They took me along the ghats of the Ganges River, sharing stories about the spiritual significance and the city's rituals. 
+                         It was an insightful, spiritual journey that left me deeply touched. 
+                        If you're planning a visit to Varanasi, booking a local guide through this website is a must.
+                    </p>
+                    <div class="stars aos-init" data-aos="flip-up">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+    
+                    </div>       
+                </div></div>
+            <div class="swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" aria-current="true"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+    </section>
+    
+    <!--review section ends-->
+    <!--Contact section starts-->
+    <section class="contact" id="contact">
+        <h1 class="heading"><span>Contact</span> US</h1>
+        <form action="" data-aos="zoom-in">
+            <div class="inputBox">
+                <input type="text" placeholder="name" data-aos="fade-up" >
+                <input type="email" placeholder="email" data-aos="fade-up" >
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="number" data-aos="fade-up" >
+                <input type="text" placeholder="subject" data-aos="fade-up" >
+            </div>
+            <textarea name=" " placeholder="your message" id="" cols="30" rows="10" data-aos="zoom-in" >     
+            </textarea>
+            <br>
+            <input type="submit" value="send message" class="btn">
+        </form>
+    </section>
+    <!--Contact section ends-->
+    
+    <!--blog section starts-->
+    <section class="blogs" style="text-align: center;" id="blogs" data-aos="fade-up">
+        <h1 class="heading">Our <span>Blogs</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="./images/blog1taj.jpg" alt="">
+    
+                </div>
+                <div class="content">
+                    <h3>Agra Beyond the Taj Mahal:Unveiling Hidden Treasures </h3>
+                    
+                    <a href="./blog1.html" class="btn">Read More</a>
+                    <div class="icons">
+                        <a href="#"><i class="far fa-calendar"></i>27 spet 2023</a>
+                        <br>
+                        <a href="#"><i class="fas fa-user"></i>By admin</a>
+    
+                    </div>
+                </div>
+            </div>
+    
+            
+                <div class="box">
+                    <div class="image">
+                        <img src="./images/blog3.jpg" alt="">
+        
+                    </div>
+                    <div class="content">
+                        <h3>Culinary Adventures in Mumbai: A Taste of India's Street Food Capital </h3>
+                        
+                        <a href="./blog3.html" class="btn">Read More</a>
+                        <div class="icons">
+                            <a href="#"><i class="far fa-calendar"></i>15th Oct 2023</a>
+                            <br>
+                            <a href="#"><i class="fas fa-user"></i>By admin</a>
+        
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="./images/blog2b.jpg" alt="">
+        
+                    </div>
+                    <div class="content">
+                        <h3>Exploring the Mystical Charms of Varanasi with a Local Guide </h3>
+                        
+                        <a href="./blog2.html" class="btn">Read More</a>
+                        <div class="icons">
+                            <a href="#"><i class="far fa-calendar"></i>5th Nov 2023</a>
+                            <br>
+                            <a href="#"><i class="fas fa-user"></i>By admin</a>
+        
+                        </div>
+                    </div>
+                </div>    
+            
+        </div>
+
+    </div>
+    <div class="load-more aos-init" data-aos="fade-up"><a href="./blogs.html" class="btn">Load More</a></div>
+    </section>
+    
+    <!--blog section ends-->
+    
+    <!--Footer selction starts-->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box " data-aos="zoom-out">
+                <h3>Our Branches</h3>
+                <a href="#"><i class="fas fa-map-marked-alt"></i>Mumbai</a>
+                <a href="#"><i class="fas fa-map-marked-alt"></i>Delhi</a>
+                <a href="#"><i class="fas fa-map-marked-alt"></i>Pune</a>
+                <a href="#"><i class="fas fa-map-marked-alt"></i>Channai</a>
+                <a href="#"><i class="fas fa-map-marked-alt"></i>Banglore</a>
+            </div>
+            <div class="box " data-aos="zoom-out">
+                <h3>Quick Links:</h3>
+                <a href="#home"><i class="fas fa-chevron-right"></i>Home</a>
+                <a href="#packages"><i class="fas fa-chevron-right"></i>Packages</a>
+                <a href="#guide"><i class="fas fa-chevron-right"></i>Guides</a>
+                <a href="#Services"><i class="fas fa-chevron-right"></i>Service</a>
+                <a href="#pricing"><i class="fas fa-chevron-right"></i>Pricing</a>
+                <a href="#review"><i class="fas fa-chevron-right"></i>Review</a>
+                <a href="#contact"><i class="fas fa-chevron-right"></i>Contact</a>
+                <a href="#blogs"><i class="fas fa-chevron-right"></i>Blogs</a>
+            </div>
+            <div class="box " data-aos="zoom-out">
+                <h3>Contact with us on:</h3>
+                <a href="#"><i class="fas fa-phone"></i>+022-288-139</a>
+                <a href="#"><i class="fas fa-phone"></i>+95 9594464727</a>
+                <a href="https://mail.google.com/"><i class="fas fa-envelope"></i>voyageindia@gmail.com</a>
+                <a href="https://www.google.com/maps/place/Mumbai,+Maharashtra/@19.0821775,72.7163741,11z/data=!3m1!4b1!4m6!3m5!1s0x3be7c6306644edc1:0x5da4ed8f8d648c69!8m2!3d19.0759837!4d72.8776559!16zL20vMDR2bXA?entry=ttu"><i class="fas fa-map-marked-alt"></i>Mumbai , India</a>
+            </div>
+            <div class="box " data-aos="zoom-out">
+                <h3>Follow us:</h3>
+                <a href="https://www.facebook.com/"><i class="fas fa-facebook"></i>Facebook</a>
+                <a href="https://twitter.com/i/flow/login"><i class="fas fa-twitter"></i>X</a>
+                <a href="https://www.instagram.com/"><i class="fas fa-instagram"></i>Instagram</a>
+                <a href="https://www.linkedin.com/"><i class="fas fa-linkedin"></i>Linkedin</a>
+                <a href="https://in.pinterest.com/"><i class="fas fa-pinterest"></i>Pintrest</a>
+                
+            </div>
+    
+        </div>
+        <br>
+        <div class="credits">Created By <span>Vaishnavi Darekar</span> all rights reserved</div>
+    
+    </section>
+    
+    <!--Footer selction ends-->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <script src="./js/script.js"></script>
+    
+    <script>
+        AOS.init(
+            {
+                duration:600,
+                delay:200,
+            }
+        );
+    </script>
+    
+        
+    </body>
+</html>

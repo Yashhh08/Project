@@ -1,0 +1,95 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatiable" content="IE=edge" />
+    <meta name="viewport " content="width=device-width, initial=1.0" />
+
+    <title>register form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="booknow" data-aos="fade-up">
+      <img src="./images/grid.png" alt="" />
+      <form action="" class="bnform">
+        <div class="inputBox">
+          <h1 class="heading">Book <span>Trip</span></h1>
+          <br />
+          <div class="inputBox">
+            <span class="span1"> Where to </span>
+            <input type="text" placeholder="enter city/state" />
+          </div>
+
+          <div class="inputBox">
+            <span class="span1"> arrivals </span>
+            <input type="date" />
+          </div>
+
+          <div class="inputBox">
+            <span class="span1"> leaving </span>
+            <input type="date" />
+          </div>
+          <div class="inputBox">
+            <span class="span1">choose plans</span>
+            <select class="plan" id="plan">
+              <option value="selectoption">Select options</option>
+              <option value="Basic plan">Basic plan</option>
+              <option value="Standard plan">Standard plan</option>
+              <option value="Premium plan">Premium plan</option>
+            </select>
+          </div>
+          <div class="inputBox">
+            <span class="span1">guide</span>
+            <input type="text" name="gname" placeholder="guide name" />
+          </div>
+          <div>
+            <span class="span1">Payment methods</span>
+            <select class="Plan" id="Payment">
+              <option value="selectoption">Select options</option>
+              <option value="cash">cash</option>
+              <option value="bankT">Bank transfer</option>
+            </select>
+          </div>
+          <div>
+            <input type="email" name="email" placeholder="Enter your email" />
+          </div>
+          <div>
+            <input
+              type="number"
+              name="password"
+              placeholder="enter your contact number"
+            />
+          </div>
+        </div>
+        <input type="submit" value="Submit" class="btn" />
+      </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="./js/script.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 600,
+        delay: 200,
+      });
+    </script>
+  </body>
+</html>

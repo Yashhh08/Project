@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guides</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./js/guides.js"></script>
+  </head>
+  <body>
+
+    <header class="header">
+      <a href="index.html" class="logo">
+        <i class="fas fa-paper-plane"></i> Voyage
+      </a>
+      <form action="" class="search-form">
+        <input
+          type="search"
+          name=""
+          placeholder="Search here.."
+          id="searchbox"
+        />
+        <label for="searchbox" class="fas fa-search"></label>
+      </form>
+      <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-moon" id="theme-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+      </div>
+
+      <nav class="navbar">
+        <a href="./index.html#home">Home</a>
+        <a href="./index.html#packages">Packages </a>
+        <a href="./index.html#Services">Services</a>
+        <a href="./index.html#pricing">Pricing</a>
+        <a href="./index.html#review">Revivew</a>
+        <a href="./index.html#contact">Contact</a>
+        <a href="./index.html#blogs">Blogs</a>
+      </nav>
+
+      <form action="" class="Login-form" id="Login-form">
+        <div class="inputBox">
+          <span>Username</span>
+          <input type="text" placeholder="enter your name " />
+        </div>
+
+        <div class="inputBox">
+          <span>password</span>
+          <input type="password" placeholder="enter your password " />
+        </div>
+
+        <div class="remember">
+          <input type="checkbox" name="" id="login-remenber" />
+          <label for="login-remenber"> Remember me</label>
+          <br />
+          <a href="./regist.html">if new register</a>
+        </div>
+
+        <input type="submit" class="btn" value="login" />
+      </form>
+    </header>
+
+    <section class="packages" id="ourGuide">
+      <h1 class="heading">Our <span>Guides</span></h1>
+
+      <div class="box-container">
+        <!-- <div class="box" data-aos="fade-up">
+          <div class="image">
+            <img src="./images/tourguide3.jpeg" alt="mumbai" />
+
+            <h3>Arjun Desai</h3>
+          </div>
+
+          <div class="content">
+            <p>
+              <b>Location</b>: Based in Mumbai<br />
+              <b>Specialization </b>: Historical and architectural tours in
+              Mumbai.<br />
+              <b>Experience</b>: Years of guiding visitors through Mumbai's
+              colonial-era landmarks and vibrant neighborhoods.<br />
+              <b>Languages</b>: Fluent in English, Hindi, and Marathi.
+              <b>Passion</b>: Sharing the city's diverse history, from the
+              Gateway of India to the hidden gems of South Mumbai.<br />
+              <b>Approach</b>: Personalized tours that uncover Mumbai's rich
+              cultural and architectural heritage.<br />
+            </p>
+            <a href="./booknow.html" class="btn"> book now</a>
+          </div>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+          <div class="image">
+            <img src="./images/tourguide5.jpeg" alt="kerela" />
+
+            <h3>Priya Patil</h3>
+          </div>
+
+          <div class="content">
+            <p>
+              <b>Location</b>: Based in Bandra, Mumbai<br />
+              <b>Specialization </b>: Art and street culture tours in Mumbai.<br />
+              <b>Experience</b>: Deep knowledge of Mumbai's contemporary art
+              scene and street art culture<br />
+              <b>Languages</b>:Fluent in English, Hindi, and Marathi.<br />
+              <b>Passion</b>: Introducing visitors to Mumbai's vibrant street
+              art, galleries, and cultural hubs.<br />
+              <b>Approach</b>:Interactive tours that showcase the dynamic and
+              artistic side of Mumbai.<br />
+            </p>
+            <a href="./booknow.html" class="btn"> book now</a>
+          </div>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+          <div class="image">
+            <img src="./images/client3.jpg" alt="kerela" />
+
+            <h3>Vikram Singhania</h3>
+          </div>
+
+          <div class="content">
+            <p>
+              <b>Location</b>:Based in Mumbai.<br />
+              <b>Specialization </b>:Culinary and market tours in Mumbai.<br />
+              <b>Experience</b>: Extensive exploration of Mumbai's diverse food
+              scene and markets.<br />
+              <b>Languages</b>: Fluent in English, Hindi, and Marathi.<br />
+              <b>Passion</b>:Unveiling the flavors of Mumbai through street
+              food, markets, and hidden eateries.<br />
+              <b>Approach</b>:Culinary adventures that offer a taste of Mumbai's
+              gastronomic delights.<br />
+            </p>
+            <a href="./booknow.html" class="btn"> book now</a>
+          </div> -->
+        </div>
+      </div>
+      <br />
+      <br />
+      <a href="./index.html" class="btn">back to home</a>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="./js/script.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 600,
+        delay: 200,
+      });
+    </script>
+  </body>
+</html>

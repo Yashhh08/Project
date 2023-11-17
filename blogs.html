@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./js/blogs.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="logo">
+        <i class="fas fa-paper-plane"></i> Voyage
+      </a>
+      <form action="" class="search-form">
+        <input
+          type="search"
+          name=""
+          placeholder="Search here.."
+          id="searchbox"
+        />
+        <label for="searchbox" class="fas fa-search"></label>
+      </form>
+      <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-moon" id="theme-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+      </div>
+
+      <nav class="navbar">
+        <a href="./index.html#home">Home</a>
+        <a href="./index.html#packages">Packages </a>
+        <a href="./index.html#Services">Services</a>
+        <a href="./index.html#pricing">Pricing</a>
+        <a href="./index.html#review">Revivew</a>
+        <a href="./index.html#contact">Contact</a>
+        <a href="./index.html#blogs">Blogs</a>
+      </nav>
+
+      <form action="" class="Login-form" id="Login-form">
+        <div class="inputBox">
+          <span>Username</span>
+          <input type="text" placeholder="enter your name " />
+        </div>
+
+        <div class="inputBox">
+          <span>password</span>
+          <input type="password" placeholder="enter your password " />
+        </div>
+
+        <div class="remember">
+          <input type="checkbox" name="" id="login-remenber" />
+          <label for="login-remenber"> Remember me</label>
+          <br />
+          <a href="./regist.html">if new register</a>
+        </div>
+
+        <input type="submit" class="btn" value="login" />
+      </form>
+    </header>
+
+    <section class="blogs" id="blogs" data-aos="fade-up">
+      <h1 class="heading">Our <span>Blogs</span></h1>
+
+      <div class="box-container">
+        <!-- <div class="box">
+          <div class="image">
+            <img src="./images/blog1taj.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Agra Beyond the Taj Mahal:Unveiling Hidden Treasures</h3>
+
+            <a href="./blog1.html" class="btn">Read More</a>
+            <div class="icons">
+              <a href="#"><i class="far fa-calendar"></i>27 spet 2023</a>
+              <br />
+              <a href="#"><i class="fas fa-user"></i>By admin</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="./images/blog3.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>
+              Culinary Adventures in Mumbai: A Taste of India's Street Food
+              Capital
+            </h3>
+
+            <a href="./blog3.html" class="btn">Read More</a>
+            <div class="icons">
+              <a href="#"><i class="far fa-calendar"></i>15th Oct 2023</a>
+              <br />
+              <a href="#"><i class="fas fa-user"></i>By admin</a>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="./images/blog2b.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>
+              Exploring the Mystical Charms of Varanasi with a Local Guide
+            </h3>
+
+            <a href="./blog2.html" class="btn">Read More</a>
+            <div class="icons">
+              <a href="#"><i class="far fa-calendar"></i>5th Nov 2023</a>
+              <br />
+              <a href="#"><i class="fas fa-user"></i>By admin</a>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="./js/script.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 600,
+        delay: 200,
+      });
+    </script>
+  </body>
+</html>
