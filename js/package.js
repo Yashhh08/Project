@@ -391,12 +391,27 @@ const packages = [
   },
 ];
 
-const urlSearchParams = new URLSearchParams(window.location.search);
-const packageId = urlSearchParams.get("id");
-
-const package = packages.find((package) => package.id === packageId) || {};
-
 document.addEventListener("DOMContentLoaded", function () {
+  // code for get and set packgeId
+  const urlSearchParams = new URLSearchParams(window.location.search);
+  const packageId = urlSearchParams.get("id");
+
+  async function getPackageById(packageId) {
+    try {
+      const response = await axios.get(
+        `https://drab-cyan-seahorse-yoke.cyclic.app/packages/${packageId}`
+      );
+
+      displayPackage(response.data);
+    } catch (error) {
+      console.error("Error fetching package:", error.message);
+    }
+  }
+
+  getPackageById(packageId);
+
+  // code for display package
+
   const packageContainer = document.querySelector(".package");
 
   function displayPackage(package) {
@@ -435,7 +450,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const itineraryList = document.createElement("ul");
 
-    package.itinerary.forEach((day) => {
+    package.itinerary?.forEach((day) => {
       const dayItem = document.createElement("li");
 
       const dayHeading = document.createElement("h4");
@@ -462,12 +477,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const guideContainer = document.createElement("div");
 
     const guideHeading = document.createElement("h2");
-    guideHeading.innerText = "Guides for this tour";
+    guideHeading.innerText =
+      package.guides?.length > 0 ? "Guides for this tour" : "";
     guideHeading.setAttribute("style", "margin-bottom:10px");
 
     guideContainer.appendChild(guideHeading);
 
-    package.guides.forEach(function (guide, index) {
+    package.guides?.forEach(function (guide, index) {
       var guideDiv = document.createElement("div");
       guideDiv.setAttribute("class", "box");
       guideDiv.setAttribute("data-aos", "fade-up");
@@ -527,6 +543,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
     packageContainer.appendChild(mainContainer);
   }
-
-  displayPackage(package);
 });

@@ -1,6 +1,6 @@
 const blogs = [
   {
-    id: "b1",
+    _id: "b1",
     title: "A Culinary Journey Through Mumbai",
     imageUrl: "https://dummyimage.com/800x400/3498db/ffffff",
     description:
@@ -9,8 +9,8 @@ const blogs = [
     createdBy: "Admin",
   },
   {
-    id: "b2",
-    title: "Spice Trail: A Foodie's Guide to Kerala",
+    _id: "b2",
+    title: "Spice Trail: A Foodie's Gu_ide to Kerala",
     imageUrl: "https://dummyimage.com/800x400/e74c3c/ffffff",
     description:
       "Embark on a spice-filled journey in the picturesque state of Kerala. Discover the unique flavors of Kerala cuisine and the art of blending spices in traditional dishes.",
@@ -18,7 +18,7 @@ const blogs = [
     createdBy: "Admin",
   },
   {
-    id: "b3",
+    _id: "b3",
     title: "Tasting Tradition: Rajasthani Cuisine Unveiled",
     imageUrl: "https://dummyimage.com/800x400/2ecc71/ffffff",
     description:
@@ -27,7 +27,7 @@ const blogs = [
     createdBy: "Admin",
   },
   {
-    id: "b4",
+    _id: "b4",
     title: "Street Food Diaries: Delhi's Chaat Delights",
     imageUrl: "https://dummyimage.com/800x400/f39c12/ffffff",
     description:
@@ -36,7 +36,7 @@ const blogs = [
     createdBy: "Admin",
   },
   {
-    id: "b5",
+    _id: "b5",
     title: "Coastal Delights: Seafood Extravaganza in Goa",
     imageUrl: "https://dummyimage.com/800x400/9b59b6/ffffff",
     description:
@@ -52,7 +52,7 @@ const blogs = [
   //     <img src="./images/blog1taj.jpg" alt="" />
   //   </div>
   //   <div class="content">
-  //     <h3>Agra Beyond the Taj Mahal:Unveiling Hidden Treasures</h3>
+  //     <h3>Agra Beyond the Taj Mahal:Unveiling H_idden Treasures</h3>
   //     <a href="./blog1.html" class="btn">
   //       Read More
   //     </a>
@@ -93,16 +93,18 @@ document.addEventListener("DOMContentLoaded", function () {
       titleHeader.innerText = blog.title;
 
       var readMoreLink = document.createElement("a");
-      readMoreLink.setAttribute("href", `./blog.html?${"id=" + blog.id}`);
+      readMoreLink.setAttribute("href", `./blog.html?${"id=" + blog._id}`);
       readMoreLink.setAttribute("class", "btn");
       readMoreLink.innerText = "Read More";
 
       var iconsDiv = document.createElement("div");
       iconsDiv.setAttribute("class", "icons");
 
+      const dateObject = new Date(blog.createdAt);
+
       var dateLink = document.createElement("a");
       dateLink.setAttribute("href", "#");
-      dateLink.innerHTML = `<i class="far fa-calendar"></i>${blog.createdAt.toLocaleDateString()}`;
+      dateLink.innerHTML = `<i class="far fa-calendar"></i>${dateObject.toLocaleDateString()}`;
 
       var authorLink = document.createElement("a");
       authorLink.setAttribute("href", "#");
@@ -123,5 +125,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  displayBlogs(blogs);
+  // displayBlogs(blogs);
+
+  async function getBlogs() {
+    try {
+      const blogs = await axios.get(
+        "https://drab-cyan-seahorse-yoke.cyclic.app/blogs"
+      );
+
+      displayBlogs(blogs.data);
+    } catch (error) {
+      console.error("Error fetching blogs:", error.message);
+    }
+  }
+
+  getBlogs();
 });

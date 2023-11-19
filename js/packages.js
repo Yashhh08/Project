@@ -1,6 +1,6 @@
 const packages = [
   {
-    id: "p1",
+    _id: "p1",
     location: "Mumbai",
     imageUrl:
       "https://media.istockphoto.com/photos/mumbai-skyline-at-marinedrive-picture-id525069828",
@@ -54,7 +54,7 @@ const packages = [
     cost: 25000,
   },
   {
-    id: "p2",
+    _id: "p2",
     location: "Udaipur",
     imageUrl:
       "https://media.istockphoto.com/photos/udaipur-city-palace-picture-id545310425",
@@ -107,7 +107,7 @@ const packages = [
   },
 
   {
-    id: "p3",
+    _id: "p3",
     location: "Rajasthan",
     imageUrl:
       "https://media.istockphoto.com/photos/amber-fort-jaipur-picture-id859366432",
@@ -160,7 +160,7 @@ const packages = [
     cost: 28000,
   },
   {
-    id: "p4",
+    _id: "p4",
     location: "Goa",
     imageUrl:
       "https://media.istockphoto.com/photos/cavelossim-beach-south-goa-india-picture-id1286488041",
@@ -214,7 +214,7 @@ const packages = [
   },
 
   {
-    id: "p5",
+    _id: "p5",
     location: "Hampi",
     imageUrl:
       "https://media.istockphoto.com/photos/hampi-karnataka-india-ancient-ruins-of-vijayanagar-empire-picture-id657907858",
@@ -267,7 +267,7 @@ const packages = [
     cost: 20000,
   },
   {
-    id: "p6",
+    _id: "p6",
     location: "Karnataka",
     imageUrl:
       "https://media.istockphoto.com/photos/golden-beach-of-gokarna-karnataka-picture-id645191086",
@@ -320,7 +320,7 @@ const packages = [
     cost: 23000,
   },
   {
-    id: "p7",
+    _id: "p7",
     location: "Sindhudurg",
     imageUrl:
       "https://media.istockphoto.com/photos/malvan-tarkarli-sindhudurg-fort-maharashtra-picture-id1164507324",
@@ -441,14 +441,14 @@ document.addEventListener("DOMContentLoaded", function () {
       costParagraph.setAttribute("style", "font-weight:900; text-align:center");
 
       var button = document.createElement("a");
-      button.setAttribute("href", `./package.html?${"id=" + package.id}`);
+      button.setAttribute("href", `./package.html?${"id=" + package._id}`);
       button.setAttribute("class", "btn");
       button.innerText = "More details";
 
       button.addEventListener("click", handleMoreDetailsClick);
 
       function handleMoreDetailsClick() {
-        console.log(package.id);
+        console.log(package._id);
       }
 
       contentDiv.appendChild(descriptionParagraph);
@@ -463,7 +463,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // fetch data from backend. for now using static data
+  // displayPackages(packages);
 
-  displayPackages(packages);
+  async function getPackages() {
+    try {
+      const packages = await axios.get(
+        "https://drab-cyan-seahorse-yoke.cyclic.app/packages"
+      );
+
+      displayPackages(packages.data);
+    } catch (error) {
+      console.error("Error fetching packages:", error.message);
+    }
+  }
+
+  getPackages();
 });

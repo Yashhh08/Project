@@ -46,12 +46,27 @@ const blogs = [
   },
 ];
 
-const urlSeachParams = new URLSearchParams(window.location.search);
-const blogId = urlSeachParams.get("id");
-
-const blog = blogs.find((blog) => blog.id === blogId) || {};
-
 document.addEventListener("DOMContentLoaded", function () {
+  // code for get and set blogId
+  const urlSearchParams = new URLSearchParams(window.location.search);
+  const blogId = urlSearchParams.get("id");
+
+  async function getBlogById(blogId) {
+    try {
+      const response = await axios.get(
+        `https://drab-cyan-seahorse-yoke.cyclic.app/blogs/${blogId}`
+      );
+
+      displayBlog(response.data);
+    } catch (error) {
+      console.error("Error fetching package:", error.message);
+    }
+  }
+
+  getBlogById(blogId);
+
+  // code for display blog
+
   function displayBlog(blog) {
     const blogsContainer = document.querySelector(".blogs");
 
@@ -78,5 +93,5 @@ document.addEventListener("DOMContentLoaded", function () {
     blogsContainer.appendChild(div);
   }
 
-  displayBlog(blog);
+  // displayBlog(blog);
 });

@@ -1,6 +1,6 @@
 const guides = [
   {
-    id: "g1",
+    _id: "g1",
     name: "Arun Kumar",
     image: "https://dummyimage.com/150x150/3498db/ffffff",
     location: "Kochi",
@@ -8,7 +8,7 @@ const guides = [
     languages: ["English", "Malayalam", "Hindi"],
   },
   {
-    id: "g2",
+    _id: "g2",
     name: "Priya Patel",
     image: "https://dummyimage.com/150x150/e74c3c/ffffff",
     location: "Thekkady",
@@ -16,7 +16,7 @@ const guides = [
     languages: ["English", "Tamil", "Gujarati"],
   },
   {
-    id: "g3",
+    _id: "g3",
     name: "Rajesh Nair",
     image: "https://dummyimage.com/150x150/2ecc71/ffffff",
     location: "Alleppey",
@@ -24,7 +24,7 @@ const guides = [
     languages: ["English", "Malayalam", "Kannada"],
   },
   {
-    id: "g4",
+    _id: "g4",
     name: "Anjali Singh",
     image: "https://dummyimage.com/150x150/f39c12/ffffff",
     location: "Munnar",
@@ -32,7 +32,7 @@ const guides = [
     languages: ["English", "Hindi", "Bengali"],
   },
   {
-    id: "g5",
+    _id: "g5",
     name: "Vikram Sharma",
     image: "https://dummyimage.com/150x150/9b59b6/ffffff",
     location: "Mumbai",
@@ -40,7 +40,7 @@ const guides = [
     languages: ["English", "Hindi", "Marathi"],
   },
   {
-    id: "g6",
+    _id: "g6",
     name: "Meera Desai",
     image: "https://dummyimage.com/150x150/2c3e50/ffffff",
     location: "Udaipur",
@@ -48,7 +48,7 @@ const guides = [
     languages: ["English", "Hindi", "Rajasthani"],
   },
   {
-    id: "g7",
+    _id: "g7",
     name: "Karan Verma",
     image: "https://dummyimage.com/150x150/3498db/ffffff",
     location: "Rajasthan",
@@ -56,7 +56,7 @@ const guides = [
     languages: ["English", "Hindi", "Rajasthani"],
   },
   {
-    id: "g8",
+    _id: "g8",
     name: "Neha Kapoor",
     image: "https://dummyimage.com/150x150/e74c3c/ffffff",
     location: "Goa",
@@ -64,7 +64,7 @@ const guides = [
     languages: ["English", "Konkani", "Hindi"],
   },
   {
-    id: "g9",
+    _id: "g9",
     name: "Karthik Rao",
     image: "https://dummyimage.com/150x150/2ecc71/ffffff",
     location: "Hampi",
@@ -72,7 +72,7 @@ const guides = [
     languages: ["English", "Kannada", "Hindi"],
   },
   {
-    id: "g10",
+    _id: "g10",
     name: "Deepa Mishra",
     image: "https://dummyimage.com/150x150/f39c12/ffffff",
     location: "Karnataka",
@@ -80,7 +80,7 @@ const guides = [
     languages: ["English", "Kannada", "Hindi"],
   },
   {
-    id: "g11",
+    _id: "g11",
     name: "Rahul Joshi",
     image: "https://dummyimage.com/150x150/3498db/ffffff",
     location: "Sindhudurg",
@@ -88,7 +88,7 @@ const guides = [
     languages: ["English", "Marathi", "Konkani"],
   },
   {
-    id: "g12",
+    _id: "g12",
     name: "Divya Saxena",
     image: "https://dummyimage.com/150x150/e74c3c/ffffff",
     location: "Delhi",
@@ -96,7 +96,7 @@ const guides = [
     languages: ["English", "Hindi", "Punjabi"],
   },
   {
-    id: "g13",
+    _id: "g13",
     name: "Aditya Kapoor",
     image: "https://dummyimage.com/150x150/2ecc71/ffffff",
     location: "Varanasi",
@@ -104,7 +104,7 @@ const guides = [
     languages: ["English", "Hindi"],
   },
   {
-    id: "g14",
+    _id: "g14",
     name: "Ayesha Khan",
     image: "https://dummyimage.com/150x150/f39c12/ffffff",
     location: "Kolkata",
@@ -200,5 +200,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  displayGuides(guides);
+  // displayGuides(guides);
+
+  async function getGuides() {
+    try {
+      const guides = await axios.get(
+        "https://drab-cyan-seahorse-yoke.cyclic.app/guides"
+      );
+
+      displayGuides(guides.data);
+    } catch (error) {
+      console.error("Error fetching guides:", error.message);
+    }
+  }
+
+  getGuides();
 });
