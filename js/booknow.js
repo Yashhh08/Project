@@ -44,9 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const orderId = response.data._id;
 
-        alert("Package booked successfully..!!");
-
-        window.location.href = `orderSuccess.html?orderId=${orderId}`;
+        window.location.href = `./orderSuccess.html?orderId=${orderId}`;
       } catch (error) {
         console.error(error.message);
       }

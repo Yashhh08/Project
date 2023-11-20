@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const image = document.createElement("img");
     image.src = orderData.packageId.imageUrl;
+    image.setAttribute("style", "height:300px; width:400px");
 
     packageImageDiv.appendChild(image);
 
