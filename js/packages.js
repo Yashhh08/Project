@@ -426,6 +426,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
       var descriptionParagraph = document.createElement("p");
       descriptionParagraph.innerText = package.description;
+      descriptionParagraph.setAttribute(
+        "style",
+        "text-align:center;	overflow: hidden;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 5;"
+      );
 
       // var itineraryList = document.createElement("ul");
       // package.itinerary.forEach(function (day) {

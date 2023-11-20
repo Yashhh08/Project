@@ -478,7 +478,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const guideHeading = document.createElement("h2");
     guideHeading.innerText =
-      package.guides?.length > 0 ? "Guides for this tour" : "";
+      package.guides?.length > 0 ? "Guide for this tour" : "";
     guideHeading.setAttribute("style", "margin-bottom:10px");
 
     guideContainer.appendChild(guideHeading);
@@ -495,6 +495,7 @@ document.addEventListener("DOMContentLoaded", function () {
       var image = document.createElement("img");
       image.setAttribute("src", guide.image);
       image.setAttribute("alt", guide.name);
+      image.setAttribute("style", "width:200px;height:200px");
 
       var nameHeader = document.createElement("h3");
       nameHeader.innerText = guide.name;
@@ -508,8 +509,8 @@ document.addEventListener("DOMContentLoaded", function () {
       var detailsParagraph = document.createElement("p");
       detailsParagraph.innerHTML = `
         <b>Location</b>: Based in ${guide.location}<br />
-        <b>Specialization</b>: ${guide.expertise.join(", ")}<br />
-        <b>Languages</b>: ${guide.languages.join(", ")}<br />
+        <b>Specialization</b>: ${guide.expertise?.join(", ")}<br />
+        <b>Languages</b>: ${guide.languages?.join(", ")}<br />
       `;
 
       contentDiv.appendChild(detailsParagraph);
