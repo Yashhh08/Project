@@ -452,7 +452,7 @@ document.addEventListener("DOMContentLoaded", function () {
       button.addEventListener("click", handleMoreDetailsClick);
 
       function handleMoreDetailsClick() {
-        console.log(package._id);
+        // console.log(package._id);
       }
 
       contentDiv.appendChild(descriptionParagraph);

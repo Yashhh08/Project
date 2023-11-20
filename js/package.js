@@ -420,11 +420,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const imageContainer = document.createElement("div");
     imageContainer.setAttribute("class", "image");
-    imageContainer.setAttribute("style", "margin:20px");
+    imageContainer.setAttribute("style", "margin:20px;text-align:center;");
 
     const image = document.createElement("img");
     image.setAttribute("src", package.imageUrl);
     image.setAttribute("alt", package.location);
+    image.setAttribute("style", "height:650px;width:1100px");
 
     imageContainer.appendChild(image);
 
@@ -537,7 +538,7 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.href = `./booknow.html?location=${package.location}&packageId=${package._id}&userId=${userId}`;
       } else {
         alert("Please login first..!!");
-        window.location.href = "./index.html";
+        window.location.href = "./packages.html";
       }
     }
 

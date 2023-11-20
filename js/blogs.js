@@ -76,6 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
     blogs.forEach(function (blog, index) {
       var blogDiv = document.createElement("div");
       blogDiv.setAttribute("class", "box");
+      blogDiv.setAttribute("style", "text-align:center");
 
       var imageDiv = document.createElement("div");
       imageDiv.setAttribute("class", "image");
@@ -91,6 +92,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
       var titleHeader = document.createElement("h3");
       titleHeader.innerText = blog.title;
+      titleHeader.setAttribute(
+        "style",
+        "overflow: hidden;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;"
+      );
 
       var readMoreLink = document.createElement("a");
       readMoreLink.setAttribute("href", `./blog.html?${"id=" + blog._id}`);

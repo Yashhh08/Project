@@ -24,13 +24,13 @@
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
+    <script src="./js/login.js"></script>
+
     <script src="./js/packages.js"></script>
   </head>
   <body>
     <header class="header">
-      <a href="index.html" class="logo">
-        <i class="fas fa-paper-plane"></i> Voyage
-      </a>
+      <a href="#" class="logo"> <i class="fas fa-paper-plane"></i> Voyage </a>
       <form action="" class="search-form">
         <input
           type="search"
@@ -38,6 +38,7 @@
           placeholder="Search here.."
           id="searchbox"
         />
+
         <label for="searchbox" class="fas fa-search"></label>
       </form>
       <div class="icons">
@@ -48,24 +49,29 @@
       </div>
 
       <nav class="navbar">
-        <a href="./index.html#home">Home</a>
-        <a href="./index.html#packages">Packages </a>
-        <a href="./index.html#Services">Services</a>
-        <a href="./index.html#pricing">Pricing</a>
-        <a href="./index.html#review">Revivew</a>
-        <a href="./index.html#contact">Contact</a>
-        <a href="./index.html#blogs">Blogs</a>
+        <a href="#home">Home</a>
+        <a href="#packages">Packages </a>
+        <a href="#guide">Guides </a>
+        <a href="#Services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#review">Revivew</a>
+        <a href="#contact">Contact</a>
+        <a href="#blogs">Blogs</a>
       </nav>
 
       <form action="" class="Login-form" id="Login-form">
         <div class="inputBox">
-          <span>Username</span>
-          <input type="text" placeholder="enter your name " />
+          <span>Email</span>
+          <input type="email" name="email" placeholder="enter your email " />
         </div>
 
         <div class="inputBox">
           <span>password</span>
-          <input type="password" placeholder="enter your password " />
+          <input
+            type="password"
+            name="password"
+            placeholder="enter your password "
+          />
         </div>
 
         <div class="remember">
@@ -82,210 +88,7 @@
     <section class="packages" id="packages">
       <h1 class="heading">our <span>Packages</span></h1>
 
-      <div class="box-container">
-        <!-- <div class="box" data-aos="fade-up">
-          <div class="image">
-            <img src="./images/kerela.jpg" alt="kerela" />
-            <h3><i class="fas fa-map-marker-alt"></i> Kerela</h3>
-          </div>
-
-          <div class="content">
-            <p>
-              Kerala, often referred to as "God's Own Country," is a picturesque
-              state in southwestern India known for its lush green landscapes,
-              serene backwaters, and vibrant culture. With its abundant natural
-              beauty and diverse traditions, Kerala offers a unique and tranquil
-              experience for travelers.
-            </p>
-            <a href="./hireguide.html" class="btn">look for the guide</a>
-          </div>
-        </div>
-
-        <div class="box" data-aos="fade-up">
-          <div class="image">
-            <img src="./images/mumbai1.jpg" alt="mumbai" />
-            <h3><i class="fas fa-map-marker-alt"></i> Mumbai</h3>
-          </div>
-          <div class="content">
-            <p>
-              Mumbai, is a vibrant metropolis that never rests. From its iconic
-              landmarks like the Gateway of India to the bustling streets and
-              the Bollywood glamour, it's a city that offers a thrilling blend
-              of rich history and contemporary energy, ensuring a non-stop
-              adventure for every traveler.
-            </p>
-            <a href="./mumguide.html" class="btn">look for the guide</a>
-          </div>
-        </div>
-
-        <div class="box" data-aos="fade-up">
-          <div class="image">
-            <img src="./images/fort.jpg" alt="udaipur" />
-            <h3><i class="fas fa-map-marker-alt"></i> Udaipur</h3>
-          </div>
-          <div class="content">
-            <p>
-              Udaipur, the "City of Lakes" in Rajasthan, India, is famous for
-              its stunning palaces, serene lakes, and historic charm. It's a
-              romantic destination with a regal past that captivates visitors
-              with its beauty and regal ambiance.
-            </p>
-            <a href="./udpguide.html" class="btn">look for the guide</a>
-          </div>
-        </div>
-
-        <div class="box" data-aos="fade-up">
-          <div class="image">
-            <img src="./images/leh.jpg" alt="leh-ladak" />
-            <h3><i class="fas fa-map-marker-alt"></i> Leh-ladak</h3>
-          </div>
-          <div class="content">
-            <p>
-              Leh-Ladakh, nestled in the Himalayas, is a high-altitude desert
-              region in India, known for its breathtaking landscapes, rugged
-              terrain, and Tibetan-influenced culture. It's a remote and
-              awe-inspiring destination for adventurers and nature enthusiasts.
-            </p>
-            <a href="./lehguide.html" class="btn"> look for the guide</a>
-          </div>
-        </div>
-
-        <div class="box" data-aos="fade-up">
-          <div class="image">
-            <img src="./images/konkan1.jpg" alt="Konkan" />
-            <h3><i class="fas fa-map-marker-alt"></i> Konkan region</h3>
-          </div>
-          <div class="content">
-            <p>
-              the Konkan region offers a breathtaking coastal getaway with its
-              serene beaches, picturesque landscapes, and an opportunity to
-              savor delicious seafood, making it a perfect destination for a
-              peaceful and memorable vacation.
-            </p>
-            <a href="./kokguide.html" class="btn"> look for the guide</a>
-          </div>
-        </div>
-
-        <div class="box" data-aos="fade-up">
-          <div class="image">
-            <img src="./images/tajmahal.jpg" alt="Agra" />
-            <h3><i class="fas fa-map-marker-alt"></i> Agra</h3>
-          </div>
-          <div class="content">
-            <p>
-              Agra, a prominent tourism hub in northern India, is famous for the
-              stunning Taj Mahal and numerous historic sites, drawing travelers
-              from around the world to witness its architectural wonders and
-              rich heritage.
-            </p>
-            <a href="./hireguide.html" class="btn"> look for the guide</a>
-          </div>
-        </div>
-
-        <div class="box" data-aos="fade-up">
-          <div class="image">
-            <img src="./images/varanasip.jpg" alt="Varanasi" />
-            <h3><i class="fas fa-map-marker-alt"></i>Varanasi</h3>
-          </div>
-          <div class="content">
-            <p>
-              Varanasi, is a mesmerizing tapestry of spirituality, where ancient
-              rituals on the ghats and the Ganges River's serenity create a
-              profound and unforgettable experience. It's a city that seamlessly
-              weaves tradition, culture, and mystique into the very fabric of
-              its being.
-            </p>
-            <a href="./hireguide.html" class="btn">look for the guide</a>
-          </div>
-        </div>
-
-        <div class="box" data-aos="fade-up">
-          <div class="image">
-            <img src="./images/manali.jpg" alt="Manali" />
-            <h3><i class="fas fa-map-marker-alt"></i>Manali</h3>
-          </div>
-          <div class="content">
-            <p>
-              Manali, in the eyes of a tourist, is a captivating Himalayan
-              paradise, where lush valleys, snow-capped peaks, and serene
-              landscapes provide the perfect canvas for adventure and
-              relaxation. It's a haven for nature enthusiasts, offering a blend
-              of scenic beauty and thrilling experiences.
-            </p>
-            <a href="./hireguide.html" class="btn">look for the guide</a>
-          </div>
-        </div>
-
-        <div class="box" data-aos="fade-up">
-          <div class="image">
-            <img src="./images/goa.jpg" alt="Goa" />
-            <h3><i class="fas fa-map-marker-alt"></i>Goa</h3>
-          </div>
-          <div class="content">
-            <p>
-              Goa is a coastal paradise where golden beaches meet the Arabian
-              Sea, offering a laid-back atmosphere, vibrant nightlife, and a
-              cultural tapestry influenced by both Indian and Portuguese
-              heritage. It's a place where you can unwind on pristine shores,
-              savor delectable seafood, and dance the night away in an
-              intoxicating fusion of fun and relaxation.
-            </p>
-            <a href="./hireguide.html" class="btn">look for the guide</a>
-          </div>
-        </div>
-
-        <div class="box" data-aos="fade-up">
-          <div class="image">
-            <img src="./images/kochi.jpg" alt="Kochi" />
-            <h3><i class="fas fa-map-marker-alt"></i>Kochi</h3>
-          </div>
-          <div class="content">
-            <p>
-              Kochi, from a tourist's perspective, is a captivating coastal gem
-              where ancient history mingles with modernity, offering serene
-              backwaters, historic forts, and a multicultural ambiance that
-              makes every visit a delightful journey into India's cultural
-              tapestry. It's a place where the aroma of spices, the tranquility
-              of houseboats, and the charm of Chinese fishing nets come together
-              in perfect harmony.
-            </p>
-            <a href="./hireguide.html" class="btn">look for the guide</a>
-          </div>
-        </div>
-
-        <div class="box" data-aos="fade-up">
-          <div class="image">
-            <img src="./images/kolkata.jpg" alt="Kolkata" />
-            <h3><i class="fas fa-map-marker-alt"></i>Kolkata</h3>
-          </div>
-          <div class="content">
-            <p>
-              Kolkata, is a captivating blend of historical grandeur, artistic
-              expression, and a vibrant street life. From the majestic Victoria
-              Memorial to the lively markets of New Market, it's a city that
-              celebrates culture, literature, and a taste of delicious Bengali
-              cuisine
-            </p>
-            <a href="./hireguide.html" class="btn">look for the guide</a>
-          </div>
-        </div>
-
-        <div class="box" data-aos="fade-up">
-          <div class="image">
-            <img src="./images/ranthambore.jpg" alt="ranthambore" />
-            <h3><i class="fas fa-map-marker-alt"></i>Ranthambore</h3>
-          </div>
-          <div class="content">
-            <p>
-              Ranthambore,is a wildlife enthusiast's dream come true, known for
-              its breathtaking tiger safaris amidst the ancient ruins of
-              Ranthambore Fort, offering a unique fusion of history and natural
-              beauty in the heart of Rajasthan.
-            </p>
-            <a href="./hireguide.html" class="btn">look for the guide</a>
-          </div>
-        </div> -->
-      </div>
+      <div class="box-container"></div>
       <br />
       <br />
 

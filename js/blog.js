@@ -74,6 +74,17 @@ document.addEventListener("DOMContentLoaded", function () {
     heading.setAttribute("class", "heading");
     heading.innerText = `${blog.title}`;
 
+    var imageDiv = document.createElement("div");
+    imageDiv.setAttribute("class", "image");
+    imageDiv.setAttribute("style", "text-align:center");
+
+    var image = document.createElement("img");
+    image.setAttribute("src", blog.imageUrl);
+    image.setAttribute("alt", blog.title);
+    image.setAttribute("style", "height:500px;width:800px");
+
+    imageDiv.appendChild(image);
+
     const blogPage = document.createElement("p");
     blogPage.setAttribute("class", "blogpage");
     blogPage.innerHTML = `${blog.description}`;
@@ -89,6 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
     div.appendChild(backButton);
 
     blogsContainer.appendChild(heading);
+    blogsContainer.appendChild(imageDiv);
     blogsContainer.appendChild(blogPage);
     blogsContainer.appendChild(div);
   }

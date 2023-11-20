@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
         localStorage.setItem("name", user.name);
         localStorage.setItem("_id", user._id);
 
-        window.location.href = "./index.html";
+        window.location.reload();
 
         alert("login successfully");
       } catch (error) {
