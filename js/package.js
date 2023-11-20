@@ -523,14 +523,21 @@ document.addEventListener("DOMContentLoaded", function () {
     buttonDiv.setAttribute("style", "text-align:center");
 
     var button = document.createElement("a");
-    button.setAttribute("href", `./booknow.html`);
+
     button.setAttribute("class", "btn");
     button.innerText = "Book Now";
 
     button.addEventListener("click", handleMoreDetailsClick);
 
     function handleMoreDetailsClick() {
-      console.log(package.id);
+      const userId = localStorage.getItem("_id");
+
+      if (userId) {
+        window.location.href = `./booknow.html?location=${package.location}&packageId=${package._id}&userId=${userId}`;
+      } else {
+        alert("Please login first..!!");
+        window.location.href = "./index.html";
+      }
     }
 
     buttonDiv.appendChild(button);

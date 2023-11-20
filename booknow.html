@@ -21,6 +21,10 @@
     />
 
     <link rel="stylesheet" href="./style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="./js/booknow.js"></script>
   </head>
   <body>
     <div class="booknow" data-aos="fade-up">
@@ -29,48 +33,48 @@
         <div class="inputBox">
           <h1 class="heading">Book <span>Trip</span></h1>
           <br />
-          <div class="inputBox">
+          <!-- <div class="inputBox">
             <span class="span1"> Where to </span>
-            <input type="text" placeholder="enter city/state" />
-          </div>
+            <input type="text" name="location" placeholder="enter city/state" />
+          </div> -->
 
           <div class="inputBox">
             <span class="span1"> arrivals </span>
-            <input type="date" />
+            <input type="date" name="arrivalDate" />
           </div>
 
           <div class="inputBox">
             <span class="span1"> leaving </span>
-            <input type="date" />
+            <input type="date" name="departureDate" />
           </div>
           <div class="inputBox">
             <span class="span1">choose plans</span>
-            <select class="plan" id="plan">
+            <select class="plan" id="plan" name="plan">
               <option value="selectoption">Select options</option>
               <option value="Basic plan">Basic plan</option>
               <option value="Standard plan">Standard plan</option>
               <option value="Premium plan">Premium plan</option>
             </select>
           </div>
-          <div class="inputBox">
+          <!-- <div class="inputBox">
             <span class="span1">guide</span>
             <input type="text" name="gname" placeholder="guide name" />
-          </div>
+          </div> -->
           <div>
             <span class="span1">Payment methods</span>
-            <select class="Plan" id="Payment">
+            <select class="Plan" id="Payment" name="paymentMode">
               <option value="selectoption">Select options</option>
-              <option value="cash">cash</option>
-              <option value="bankT">Bank transfer</option>
+              <option value="Cash">cash</option>
+              <option value="Bank Transfer">Bank transfer</option>
             </select>
           </div>
-          <div>
+          <!-- <div>
             <input type="email" name="email" placeholder="Enter your email" />
-          </div>
+          </div> -->
           <div>
             <input
               type="number"
-              name="password"
+              name="number"
               placeholder="enter your contact number"
             />
           </div>
